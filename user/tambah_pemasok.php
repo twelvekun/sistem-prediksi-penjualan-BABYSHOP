@@ -40,8 +40,20 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+<style>
+        body {
+        background: #FBF7E6;
+        background-attachment: fixed;
+        min-height: 100vh;
+        }
+        .right-body{
+            background: #FBF7E6;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+    </style>
 
-<body class="bg-light">
+<body class="right-body">
     <?php include "header.php"; ?>
 
     <div class="container mt-4">

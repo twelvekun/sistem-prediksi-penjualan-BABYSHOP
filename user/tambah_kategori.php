@@ -38,14 +38,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>
         body {
-        background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #334155 100%);
+        background: #FBF7E6;
         background-attachment: fixed;
         min-height: 100vh;
+        }
+        .right-body{
+            background: #FBF7E6;
+            background-attachment: fixed;
+            min-height: 100vh;
         }
     </style>
 </head>
 
-<body class="bg-light">
+<body class="right-body">
     <?php include "header.php"; ?>
 
     <div class="container mt-4">

@@ -246,6 +246,7 @@ $kategori_result = mysqli_query($conn, $kategori_query);
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
+                                    <th>No</th>
                                     <th>Kode Barang</th>
                                     <th>Nama Produk</th>
                                     <th>Kategori Barang</th>
@@ -256,8 +257,10 @@ $kategori_result = mysqli_query($conn, $kategori_query);
                             <tbody>
                                 <?php
                                 if (mysqli_num_rows($result) > 0) {
+                                    $no = 1;
                                     while ($row = mysqli_fetch_assoc($result)) {
                                         echo "<tr>";
+                                        echo "<td>" . $no++ . "</td>";
                                         echo "<td>" . $row['IDPRODUK'] . "</td>";
                                         echo "<td>" . $row['NAMAPRODUK'] . "</td>";
                                         echo "<td>" . $row['JENISPRODUK'] . "</td>";

@@ -106,7 +106,7 @@ $data = mysqli_fetch_assoc($result);
     <div class="container">
         <div class="header">
             <h2>UD.Roda Alam</h2>
-            <p>Desa Centini, Kec. Laren,</p>
+            <p>Desa Babat, Kec. Babat,</p>
             <p>Kabupaten Lamongan, Jawa Timur</p>
             <h3>Rekap Data Barang Masuk</h3>
             <p><?= date('d-m-Y'); ?></p>

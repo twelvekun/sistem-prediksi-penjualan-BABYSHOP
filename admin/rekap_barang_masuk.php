@@ -30,7 +30,7 @@ $sheet->getColumnDimension('D')->setWidth(25); // Pemasok
 $sheet->getColumnDimension('E')->setWidth(20); // Tanggal Masuk
 
 // Judul dan header
-$sheet->setCellValue('A1', 'UD.Roda Alam');
+$sheet->setCellValue('A1', 'Mama Asix BABYSHOP');
 $sheet->setCellValue('A2', 'REKAP DATA BARANG MASUK');
 $sheet->setCellValue('A3', 'Tanggal: ' . date('d-m-Y')); // Format tanggal rekapan
 $sheet->mergeCells('A1:E1');
@@ -151,7 +151,7 @@ $sheet->getPageSetup()->setPaperSize(\PhpOffice\PhpSpreadsheet\Worksheet\PageSet
 
 // Tambahkan header dan footer untuk cetakan
 $sheet->getHeaderFooter()
-    ->setOddHeader('&C&B&16UD. UD.Roda Alam - REKAP BARANG MASUK')
+    ->setOddHeader('&C&B&16UD. Mama Asix BABYSHOP - REKAP BARANG MASUK')
     ->setOddFooter('&L&B' . $sheet->getTitle() . '&R&P dari &N');
 
 // Set nama file

@@ -56,9 +56,14 @@ $pemasok = mysqli_query($conn, "SELECT * FROM pemasok");
             max-width: 600px;
             margin: auto;
         }
+        .right-body{
+            background: #FBF7E6;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
     </style>
 </head>
-<body>
+<body class="right-body">
     <?php include 'header.php'; ?>
 
     <div class="container mt-5">

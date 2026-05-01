@@ -18,7 +18,7 @@ $spreadsheet = new Spreadsheet();
 $sheet = $spreadsheet->getActiveSheet();
 
 // Judul dan header
-$sheet->setCellValue('A1', 'UD.Roda Alam');
+$sheet->setCellValue('A1', 'Mama Asix BABYSHOP');
 $sheet->setCellValue('A2', 'Rekap Data Barang Keluar');
 $sheet->setCellValue('A3', date('d-m-Y')); // Format tanggal rekapan
 $sheet->mergeCells('A1:E1');

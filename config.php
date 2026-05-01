@@ -2,7 +2,7 @@
 $host = 'localhost';
 $user = 'root';
 $pass = '';
-$db = 'skrip2';
+$db = 'rijal';
 
 
 // Membuat koneksi

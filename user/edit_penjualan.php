@@ -77,9 +77,14 @@ $tahunLama = (int)$data['TAHUN'];
         background-attachment: fixed;
         min-height: 100vh;
         }
+         .right-body{
+            background: #FBF7E6;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
     </style>
 </head>
-<body class="bg-light">
+<body class="right-body">
 <?php include 'header.php'; ?>
 
 <div class="container mt-4">

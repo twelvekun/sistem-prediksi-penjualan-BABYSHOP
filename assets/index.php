@@ -213,7 +213,7 @@ if (!$result_produk) {
 
         function printNota() {
             var title = 'BABYSHOP';
-            var alamat = 'Desa Centini, Kec. Laren';
+            var alamat = 'Desa Babat , Kec. Babat';
             var kasir = '<?php echo $_SESSION["username"]; ?>'; // Ubah untuk memuat nama kasir
                 var tanggal = '<?php echo date("d-m-Y"); ?>'; // Tanggal saat ini
 

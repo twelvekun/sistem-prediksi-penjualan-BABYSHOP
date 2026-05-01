@@ -40,7 +40,7 @@ if (isset($_POST['export'])) {
     
     // Judul dan header
     $bulan_tahun = date('F Y', strtotime($selected_month));
-    $sheet->setCellValue('A1', 'UD.Roda Alam');
+    $sheet->setCellValue('A1', 'Mama Asix BABYSHOP');
     $sheet->setCellValue('A2', 'REKAP DATA PENJUALAN - BULAN ' . strtoupper($bulan_tahun));
     $sheet->setCellValue('A3', 'Tanggal: ' . date('d-m-Y')); // Format tanggal rekapan
     $sheet->mergeCells('A1:D1');
@@ -158,7 +158,7 @@ if (isset($_POST['export'])) {
     
     // Tambahkan header dan footer untuk cetakan
     $sheet->getHeaderFooter()
-        ->setOddHeader('&C&B&16UD. UD.Roda Alam - REKAP PENJUALAN')
+        ->setOddHeader('&C&B&16UD. Mama Asix BABYSHOP - REKAP PENJUALAN')
         ->setOddFooter('&L&B' . $sheet->getTitle() . '&R&P dari &N');
     
     // Set nama file

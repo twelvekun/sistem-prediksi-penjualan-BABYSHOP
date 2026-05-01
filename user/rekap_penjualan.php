@@ -23,7 +23,7 @@ $result = mysqli_query($conn, $query);
 if (isset($_POST['export'])) {
     $spreadsheet = new Spreadsheet();
     $sheet = $spreadsheet->getActiveSheet();
-    $sheet->setCellValue('A1', 'UD.Roda Alam');
+    $sheet->setCellValue('A1', 'Mama Asix BABYSHOP');
     $sheet->setCellValue('A2', 'Rekap Data Penjualan - Bulan ' . date('F Y', strtotime($selected_month)));
     $sheet->setCellValue('A3', 'Dibuat tanggal: ' . date('d-m-Y'));
     $sheet->mergeCells('A1:E1');

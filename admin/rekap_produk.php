@@ -21,7 +21,7 @@ $sheet->getColumnDimension('C')->setWidth(20); // Kategori
 $sheet->getColumnDimension('D')->setWidth(15); // Jumlah Stok
 
 // Judul dan header
-$sheet->setCellValue('A1', 'UD.Roda Alam');
+$sheet->setCellValue('A1', 'Mama Asix BABYSHOP');
 $sheet->setCellValue('A2', 'REKAP DATA PRODUK');
 $sheet->setCellValue('A3', 'Tanggal: ' . date('d-m-Y')); // Format tanggal rekapan
 $sheet->mergeCells('A1:D1');
@@ -61,7 +61,8 @@ $headerStyle = [
     ],
 ];
 $sheet->getStyle('A5:D5')->applyFromArray($headerStyle);
-$sheet->getRowDimension(5)->setRowHeight(20); // Tinggi baris header
+$sheet->getRowDimension(5)->setRowHeight(20);
+ // Tinggi baris header
 
 // Ambil data produk
 $query = "SELECT p.IDPRODUK, p.NAMAPRODUK, k.JENISPRODUK, p.JUMLAHPRODUK
@@ -141,7 +142,7 @@ $sheet->getPageSetup()->setPaperSize(\PhpOffice\PhpSpreadsheet\Worksheet\PageSet
 
 // Tambahkan header dan footer untuk cetakan
 $sheet->getHeaderFooter()
-    ->setOddHeader('&C&B&16UD. UD.Roda Alam - REKAP DATA PRODUK')
+    ->setOddHeader('&C&B&16UD. Mama Asix BABYSHOP - REKAP DATA PRODUK')
     ->setOddFooter('&L&B' . $sheet->getTitle() . '&R&P dari &N');
 
 // Set nama file
